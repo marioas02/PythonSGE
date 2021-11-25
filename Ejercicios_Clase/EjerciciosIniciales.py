@@ -1,36 +1,37 @@
 import random
-#Ejercicio 1: 1. Introducir tres numeros y mostrarlos ordenados de mayor a menor.
+
+# Ejercicio 1: 1. Introducir tres numeros y mostrarlos ordenados de mayor a menor.
 print("#Ejercicio 1: 1. Introducir tres numeros y mostrarlos ordenados de mayor a menor.");
 numeros = [0, 0, 0]
 
 print("Numero 1:", end=" ")
-numeros[0] = int (input())
+numeros[0] = int(input())
 print("Numero 2:", end=" ")
-numeros[1] = int (input())
+numeros[1] = int(input())
 print("Numero 3:", end=" ")
-numeros[2] = int (input())
+numeros[2] = int(input())
 
 numeros.sort(reverse=True)
 print("\nOrdenados de mayor a menor son: ", end=" ")
 print(numeros)
 
-#2. Crear un array con los siguientes datos "perro", "gato", 1, 100
+# 2. Crear un array con los siguientes datos "perro", "gato", 1, 100
 print("\n2. Crear un array con los siguientes datos ""perro"", ""gato"", 1, 100")
 array = ["perro", "gato", 1, 100]
 print("He creado el array y queda asi:", end=" ")
 print(array)
 
-#3. Mostrar de la segunda a la cuarta letra de la primera palabra del array anterior.
+# 3. Mostrar de la segunda a la cuarta letra de la primera palabra del array anterior.
 print("\n3. Mostrar de la segunda a la cuarta letra de la primera palabra del array anterior.")
-print("Si ponemos: array[0][1:4] en un print sale:", end =" ")
+print("Si ponemos: array[0][1:4] en un print sale:", end=" ")
 print(array[0][1:4])
 print("Porque nos dicen de la primera palabra, pos 0 y la letra de la 2 a la 4 que seria de la 1 a la 4 sin incluir")
 
-#4. Mostrar la penultima letra de la segunda palabra
+# 4. Mostrar la penultima letra de la segunda palabra
 print("\n4. Mostrar la penultima letra de la segunda palabra")
 print(array[1][-2])
 
-#5. En la tercera posicion del array guardar el siguiente texto con este formato:
+# 5. En la tercera posicion del array guardar el siguiente texto con este formato:
 print("\n5. En la tercera posici�n del array guardar el siguiente texto con este formato:")
 array[2] = """En un
         lugar de
@@ -38,29 +39,29 @@ array[2] = """En un
 print("Has de poner entre tres comillas.")
 print(array[2])
 
-#6. sumar al contenido de la cuarta posici�n la primera cifra de esta misma posicion
+# 6. sumar al contenido de la cuarta posici�n la primera cifra de esta misma posicion
 print("\n6. sumar al contenido de la cuarta posici�n la primera cifra de esta misma posicion")
 numero = str(array[3])
-mostrar = array[3]+int(numero[0])
+mostrar = array[3] + int(numero[0])
 print(mostrar)
 
-#ejercicio 7
+# ejercicio 7
 array.append(["tortuga", 200])
 print(array[4])
 
-#ejercicio 2.2
+# ejercicio 2.2
 numero = 5
 contador = 0
 while contador < 10:
     contador = contador + 1
-    print("5 * "+str(contador)+" = "+str(numero * contador))
+    print("5 * " + str(contador) + " = " + str(numero * contador))
 
-#ejercicio 3.2
+# ejercicio 3.2
 print("introduce un numero")
 numero = input()
-print("tiene "+str(len(numero))+" cifras")
+print("tiene " + str(len(numero)) + " cifras")
 
-#ejercicio 4.2
+# ejercicio 4.2
 print("introduce un numero")
 numero = input()
 salir = True
@@ -80,7 +81,7 @@ if acierto == len(numero):
 else:
     print("no es capicua")
 
-#ejercicio 11
+# ejercicio 11
 print("introduce el importe de la compra")
 pago = int(input())
 print("paga con tarjeta")
@@ -93,9 +94,9 @@ else:
         pago = pago - (importe * 0.1)
 if tarjeta == "si":
     pago = pago - (importe * 0.5)
-print("el cliente paga "+str(pago))
+print("el cliente paga " + str(pago))
 
-#ejercicio 12
+# ejercicio 12
 print("introduce el numero de horas trabajadas")
 hora = int(input())
 sueldo = 0
@@ -105,9 +106,9 @@ if hora > 40:
     sueldo = sueldo + (horaextras * 20)
 else:
     sueldo = hora * 16
-print("tu sueldo es "+str(sueldo))
+print("tu sueldo es " + str(sueldo))
 
-#ejercicio 13
+# ejercicio 13
 print("escribe el numero de * que quieres que tenga tu cuadrado")
 lado = int(input())
 for i in range(lado):
@@ -115,28 +116,28 @@ for i in range(lado):
         print("* ", end="")
     print()
 
-#ejercicio 14
+# ejercicio 14
 print("escribe el numero de * que quieres que tenga tu cuadrado")
 lado = int(input())
 for i in range(lado):
     pinta = ""
     for j in range(lado):
-        if i == 0 or i == lado-1:
+        if i == 0 or i == lado - 1:
             pinta = pinta + "* "
         else:
-            if j == 0 or j == lado-1:
+            if j == 0 or j == lado - 1:
                 pinta = pinta + "* "
             else:
                 pinta = pinta + "  "
     print(pinta)
 
-#ejercicio 15
+# ejercicio 15
 mayor = 0
 media = 0
 menor = 0
 contador = 0
 for i in range(5):
-    print("escribe "+str(i+1)+" numero")
+    print("escribe " + str(i + 1) + " numero")
     numero = int(input())
     if i == 0:
         menor = numero
@@ -146,26 +147,27 @@ for i in range(5):
         menor = numero
     media = media + numero
     contador = contador + 1;
-print("el mayor es: "+str(mayor))
-print("el menor es: "+str(menor))
-print("y la media es: "+str(media/contador))
+print("el mayor es: " + str(mayor))
+print("el menor es: " + str(menor))
+print("y la media es: " + str(media / contador))
 
-#ejercicio 16
+# ejercicio 16
 numero = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 for i in range(len(numero)):
     print("escribe " + str(i + 1) + " numero")
     numero[i] = input()
-print(numero[0]+", "+numero[9]+", "+numero[1]+", "+numero[8]+", "+numero[2]+", "+numero[7]+", "+numero[3]+", "+numero[6]+", "+numero[4]+", "+numero[5])
+print(numero[0] + ", " + numero[9] + ", " + numero[1] + ", " + numero[8] + ", " + numero[2] + ", " + numero[7] + ", " +
+      numero[3] + ", " + numero[6] + ", " + numero[4] + ", " + numero[5])
 
-#ejercicio 17
+# ejercicio 17
 numero = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 cre = 0
 des = 0
 for i in range(len(numero)):
     print("escribe " + str(i + 1) + " numero")
     numero[i] = input()
-for i in range(len(numero)-1):
-    if numero[i] < numero[i+1]:
+for i in range(len(numero) - 1):
+    if numero[i] < numero[i + 1]:
         cre = cre + 1
 if cre == 8:
     print("es creciente")
@@ -178,7 +180,7 @@ else:
     else:
         print("esta desordenado")
 
-#ejercicio 18
+# ejercicio 18
 print("escribe el numero de * que quieres que tenga tu triangulo")
 numero = int(input())
 for i in range(numero):
@@ -194,7 +196,7 @@ for i in range(numero):
             pinta = pinta + "* "
     print(pinta)
 
-#ejercicio 19
+# ejercicio 19
 numero = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 repeticiones = 0
 for i in range(len(numero)):
@@ -210,7 +212,7 @@ if repeticiones == 0:
 else:
     print("se repite algunos numeros")
 
-#ejercicio 20
+# ejercicio 20
 print("escribe el numero de * que quieres que tenga tu rombo")
 numero = int(input())
 limite = 0
@@ -224,9 +226,13 @@ for i in range(numero):
     limite = limite + 1
     print(pinta)
 
-#ejercicio 21
-numeros1 = [random.randint(1, 50), random.randint(1, 50), random.randint(1, 50), random.randint(1, 50), random.randint(1, 50), random.randint(1, 50), random.randint(1, 50), random.randint(1, 50), random.randint(1, 50), random.randint(1, 50)]
-numeros2 = [random.randint(1, 50), random.randint(1, 50), random.randint(1, 50), random.randint(1, 50), random.randint(1, 50), random.randint(1, 50), random.randint(1, 50), random.randint(1, 50), random.randint(1, 50), random.randint(1, 50)]
+# ejercicio 21
+numeros1 = [random.randint(1, 50), random.randint(1, 50), random.randint(1, 50), random.randint(1, 50),
+            random.randint(1, 50), random.randint(1, 50), random.randint(1, 50), random.randint(1, 50),
+            random.randint(1, 50), random.randint(1, 50)]
+numeros2 = [random.randint(1, 50), random.randint(1, 50), random.randint(1, 50), random.randint(1, 50),
+            random.randint(1, 50), random.randint(1, 50), random.randint(1, 50), random.randint(1, 50),
+            random.randint(1, 50), random.randint(1, 50)]
 repeticiones = 0
 for i in range(len(numeros1)):
     for j in range(len(numeros2)):
@@ -237,7 +243,7 @@ if repeticiones > 0:
 else:
     print("los numeros no se repiten")
 
-#ejercicio 22
+# ejercicio 22
 numero = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 for i in range(8):
     print("escribe " + str(i + 1) + " numero")
@@ -251,7 +257,7 @@ numero.insert(posicion, mete)
 numero.pop(10)
 print(numero)
 
-#ejercicio 23
+# ejercicio 23aa
 alumno = 0
 print("escribe el numero de alumnos")
 alumno = int(input())
@@ -259,12 +265,13 @@ asignatura1 = []
 asignatura2 = []
 asignatura3 = []
 for i in range(alumno):
-    print("introduce la nota del alumno "+(i + 1)+" y la asignatura 1")
+    print("introduce la nota del alumno " + (i + 1) + " y la asignatura 1")
     asignatura1.append(int(input()))
     print("introduce la nota del alumno " + (i + 1) + " y la asignatura 2")
     asignatura2.append(int(input()))
     print("introduce la nota del alumno " + (i + 1) + " y la asignatura 3")
     asignatura3.append(int(input()))
 for i in range(alumno):
-    print("Alumno "+(i + 1)+": la asignatura 1 "+asignatura1[i]+", la asignatura 2 "+asignatura2[i]+", la asignatura 3 "+asignatura3[i])
+    print("Alumno " + (i + 1) + ": la asignatura 1 " + asignatura1[i] + ", la asignatura 2 " + asignatura2[
+        i] + ", la asignatura 3 " + asignatura3[i])
     print("media ")
